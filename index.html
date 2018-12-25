@@ -1,0 +1,22 @@
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>はじめてのmBaaS</title>
+ </head>
+ <script typr="text/javascript" src="ncmb.min.js" charset="utf-8"></script>
+ <script>
+  var ncmb = new NCMB("366a6894d867d67df7769932ed04b15fa49c60bc4d88bea502500fb7b262c2f0","e62ecdcf7f87f29d4c63385083da0220e2c7b16e84ae72cf26416ceaeab83304");
+  
+  var Testclass = ncmb.DaraStore("TestClass");
+  
+  var testClass = new TestClass();
+  testClass.set("massage", "Hello, NCMB!");
+  testClass.save()
+   .then(function(){
+   
+   })
+   .catch(function(err){
+   
+   });
+  </script>
+ </html> 
